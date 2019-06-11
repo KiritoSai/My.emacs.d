@@ -1,0 +1,31 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '(("bing.com"
+  [url-cookie "_EDGE_V" "1" "Sat, 06-Jun-2020 07:43:55 GMT" "/" "bing.com" nil]
+  [url-cookie "MUID" "2CE5E63AE7486573351CEB61E6666491" "Sat, 06-Jun-2020 07:43:55 GMT" "/" "bing.com" nil])
+ ("www.bing.com"
+  [url-cookie "MUIDB" "2CE5E63AE7486573351CEB61E6666491" "Sat, 06-Jun-2020 07:43:55 GMT" "/" "www.bing.com" nil])
+ ("cn.bing.com"
+  [url-cookie "MUIDB" "2CE5E63AE7486573351CEB61E6666491" "Sat, 06-Jun-2020 07:43:55 GMT" "/" "cn.bing.com" nil])
+ ("www4.bing.com"
+  [url-cookie "MUIDB" "2CE5E63AE7486573351CEB61E6666491" "Sat, 06-Jun-2020 07:46:05 GMT" "/" "www4.bing.com" nil])
+ ("www.laptopmag.com"
+  [url-cookie "RAAS" "Device%3D%3ECOMPUTER%3A%3ACountry%3D%3ECHN" "四 6月 06 08:06:29 2019 GMT" "/reviews/laptops/new-ipad-pro-2018-129-inch" "www.laptopmag.com" nil]
+  [url-cookie "__uzma" "5cf77805240824.03285403" "六 6月 02 08:06:29 2029 GMT" "/" "www.laptopmag.com" nil]
+  [url-cookie "__uzmd" "1559721989" "六 6月 02 08:06:29 2029 GMT" "/" "www.laptopmag.com" nil]
+  [url-cookie "__uzmc" "663931040150" "六 6月 02 08:06:29 2029 GMT" "/" "www.laptopmag.com" nil]
+  [url-cookie "__uzmb" "1559721989" "六 6月 02 08:06:29 2029 GMT" "/" "www.laptopmag.com" nil])
+ (".bing.com"
+  [url-cookie "SRCHD" "AF=NOFORM" "Thu, 13-May-2021 07:43:55 GMT" "/" ".bing.com" nil]
+  [url-cookie "SRCHUID" "V=2&GUID=C12773DB302F40A9A2754AF4CC912942&dmnchg=1" "Thu, 13-May-2021 07:43:55 GMT" "/" ".bing.com" nil]
+  [url-cookie "SRCHUSR" "DOB=20190513" "Thu, 13-May-2021 07:43:55 GMT" "/" ".bing.com" nil]))
+)
+(setq url-cookie-secure-storage
+ 'nil)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

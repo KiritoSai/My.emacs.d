@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/whr_speed_plan/" "~/uviz/" "~/apollo/" "~/MetaVC/" "~/gperftools/" "~/.emacs.d/leetcode.el/" "~/speed_plan/" "~/new_speed_plan/")

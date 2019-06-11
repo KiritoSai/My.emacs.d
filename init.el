@@ -44,7 +44,15 @@
 (when (require 'flycheck nil t)
   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
   (add-hook 'elpy-mode-hook 'flycheck-mode))
+;;permanently enable syntax checking with flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
+;;flycheck c++11
+(require 'flycheck)
+(flycheck-mode)
+(add-hook 'c++-mode-hook
+	  (lambda() (setq flycheck-clang-language-standard "c++11")))
+;;
 (require 'py-autopep8)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
@@ -74,7 +82,7 @@
  '(elpy-rpc-python-command "python3")
  '(package-selected-packages
    (quote
-    (google-c-style highlight-parentheses flycheck-ycmd company-ycmd magit material-theme better-defaults)))
+    (window-numbering youdao-dictionary google-translate nov spinner graphql ## w3m projectile google-c-style highlight-parentheses flycheck-ycmd company-ycmd magit material-theme better-defaults)))
  '(python-shell-interpreter "python3"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -87,7 +95,7 @@
 
 ;;add emacs search path
 (add-to-list 'load-path "~/.emacs.d/whaoran")
-
+(add-to-list 'load-path "~/.emacs.d/leetcode.el")
 ;;load el
 (load "base.el")
 ;(load "cyexpand.el")
@@ -96,3 +104,7 @@
 
 ;;config for c/c++ code
 (load "cycode.el")
+(load "leetcode.el")
+
+;;epub reader
+(add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))

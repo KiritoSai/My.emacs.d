@@ -139,13 +139,14 @@
 ;;;; Completion framework
 (require 'company-ycmd)
 (company-ycmd-setup)
-(add-hook 'after-init-hook #'global-company-mode)  
+(add-hook 'after-init-hook #'global-company-mode)
 
-;;;; Enable flycheck
-(require 'flycheck-ycmd)
-(flycheck-ycmd-setup)
-(add-hook 'after-init-hook #'global-flycheck-mode)  
-
+;;;; Enable flycheck-ycmd
+;; (require 'flycheck-ycmd)
+;; (flycheck-ycmd-setup)
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
+;;disable cppcheck
+;;(setq-default flycheck-disabled-checkers' (c/c++-cppcheck))
 ;;;; Set always complete immediately
 (setq company-idle-delay 0)
 
@@ -178,4 +179,9 @@
 (electric-pair-mode t)
 (electric-layout-mode t)
 
-;;cycode.el ends here
+;;projectile
+(projectile-mode +1)
+;(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+;;;cycode.el ends here
