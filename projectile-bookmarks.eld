@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/whr_speed_plan/" "~/uviz/" "~/apollo/" "~/MetaVC/" "~/gperftools/" "~/.emacs.d/leetcode.el/" "~/speed_plan/" "~/new_speed_plan/")
+("~/文档/whr_speed_plan/" "~/whr_speed_plan/" "~/.emacs.d/" "~/uviz/" "~/apollo/" "~/MetaVC/" "~/gperftools/" "~/.emacs.d/leetcode.el/" "~/speed_plan/" "~/new_speed_plan/")
