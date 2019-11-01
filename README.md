@@ -12,3 +12,5 @@
 ##projectile-root替换include path 中人为的设置(失败)
 [](https://emacs.stackovernet.com/cn/q/2773)
 
+出现Symbol's function definition is void: record问题：
+说明版本不是26，解决方法 rm -rf ~/.emacs.d/elpa/* 
