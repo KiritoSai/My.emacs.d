@@ -20,7 +20,21 @@
     ein
     magit
     flycheck
+    projectile
     py-autopep8
+    ycmd
+    window-numbering
+    youdao-dictionary
+    google-translate
+    google-c-style
+    highlight-parentheses
+    flycheck-ycmd
+    company-ycmd
+    magit
+    w3m
+    nov
+    spinner
+    graphql
     material-theme))
 
 
@@ -41,6 +55,8 @@
              "jupyter")
 (setq elpy-rpc-backend "jedi")
 
+;;窗口最大化
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (when (require 'flycheck nil t)
   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
@@ -67,10 +83,19 @@
 
 
 ;;set keys for Apple keyboard, for emacs in OSX
-(setq mac-command-modifier "mata")
-(setq mac-option-modifier "super")
+;(setq mac-command-modifier "mata")
+;(setq mac-option-modifier "super")
+(when (eq system-type 'darwin) ;; mac specific settings
+(setq mac-option-modifier 'super)
+(setq mac-command-modifier 'meta)
+;(global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+)
 
-;; init.el ends here
+;; (when (eq system-type 'gnu/linux)
+;;   (setq x-super-keysym 'meta)
+;;   (setq x-option-keysym 'super)
+;;   )
+
 
 
 
@@ -109,3 +134,16 @@
 
 ;;epub reader
 (add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+
+;;clang-format
+(require 'clang-format)
+(global-set-key (kbd "C-c i") 'clang-format-region)
+(global-set-key (kbd "C-c u") 'clang-format-buffer)
+
+(setq clang-format-style-option "file")
+
+;;font
+;(global-set-key [C-kp-add] 'text-scale-increase)
+					;(global-set-key [C-kp-subtract] 'text-scale-decrease)
+(set-face-attribute 'default nil :height 200)
+;; init.el ends here

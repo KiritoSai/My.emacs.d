@@ -129,11 +129,11 @@
 ;;(add-hook 'c++-mode-hook 'ycmd-mode)
 
 ;;;; Specify how to run the server
-(set-variable 'ycmd-server-command '("/usr/bin/python3" "/home/uisee/ycmd/ycmd"))
+(set-variable 'ycmd-server-command '("/usr/bin/python3" "/home/whaoran/ycmd/ycmd"))
 ;;(set-variable 'ycmd-server-command '("/usr/bin/python" "~/ycmd/ycmd")) ;; Cannot use ~, should use abspath
 
 ;;;; Specify a global emacs configuration
-(set-variable 'ycmd-global-config "/home/uisee/ycmd/examples/.ycm_extra_conf.py")
+(set-variable 'ycmd-global-config "/home/whaoran/ycmd/examples/.ycm_extra_conf.py")
 ;;(set-variable 'ycmd-global-config "~/ycmd/examples/.ycm_extra_conf.py") ;; Cannot use ~, should use abspath
 
 ;;;; Completion framework
@@ -167,10 +167,10 @@
 (global-highlight-parentheses-mode t)
 
 ;;======================            google-c-style        ===========
-(require 'google-c-style)
-(load-file "~/.emacs.d/elpa/google-c-style-20180130.1736/google-c-style.el")
-(add-hook 'c-mode-common-hook 'google-set-c-style)
-(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+;; (require 'google-c-style)
+;; (load-file "~/.emacs.d/elpa/google-c-style-20180130.1736/google-c-style.el")
+;; (add-hook 'c-mode-common-hook 'google-set-c-style)
+;; (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 ;;----------------------        END    google-c-style        ---------
 
 
@@ -181,7 +181,7 @@
 
 ;;projectile
 (projectile-mode +1)
-;(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
 ;;;cycode.el ends here

@@ -32,7 +32,7 @@
 (setq enable-recursive-minibuffers t)
 
 ;;设置默认工作目录
-(setq default-directory "~/new_speed_plan")
+(setq default-directory "~/ROVER5.0/")
 
 ;;eww
 (setq eww-search-prefix "https://www.bing.com/search?q=")
@@ -160,3 +160,11 @@
 ;; copied from http://puntoblogspot.blogspot.com/2011/05/undo-layouts-in-emacs.html
 (global-set-key (kbd "C-x 4 u") 'winner-undo)
 (global-set-key (kbd "C-x 4 r") 'winner-redo)
+
+;;以root权限修改文件
+(defun sudo-edit-current-file ()
+  (interactive)
+  (when (buffer-file-name)
+    (let ((old-point (point)))
+      (find-file (concat "/sudo:root@localhost:" (buffer-file-name)))
+      (goto-char old-point))))
