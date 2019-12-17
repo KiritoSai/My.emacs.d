@@ -20,6 +20,7 @@
     ein
     magit
     flycheck
+    leetcode
     projectile
     py-autopep8
     ycmd
@@ -27,11 +28,14 @@
     youdao-dictionary
     google-translate
     google-c-style
+    ggtags
     highlight-parentheses
     flycheck-ycmd
     company-ycmd
     magit
+    modern-cpp-font-lock
     w3m
+    clang-format
     nov
     spinner
     graphql

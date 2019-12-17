@@ -32,7 +32,7 @@
 (setq enable-recursive-minibuffers t)
 
 ;;设置默认工作目录
-(setq default-directory "~/ROVER5.0/")
+(setq default-directory "~/")
 
 ;;eww
 (setq eww-search-prefix "https://www.bing.com/search?q=")
