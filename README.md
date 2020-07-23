@@ -10,7 +10,7 @@
 ## flycheck
 [https://phenix3443.github.io/notebook/emacs/modes/flycheck-mode.html](https://phenix3443.github.io/notebook/emacs/modes/flycheck-mode.html)
 
-## irony替换ycmd???
+## irony替换ycmd
 [https://marquistj13.github.io/MyBlog/2018/04/emacs-cpp-ide-irony/](https://marquistj13.github.io/MyBlog/2018/04/emacs-cpp-ide-irony/)
 
 ## projectile-root替换include path 中人为的设置(失败)
