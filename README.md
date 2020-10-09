@@ -18,3 +18,9 @@
 
 出现Symbol's function definition is void: record问题：
 说明版本不是26，解决方法 rm -rf ~/.emacs.d/elpa/* 
+
+##elisp入门
+https://learnxinyminutes.com/docs/zh-cn/elisp-cn/
+
+##学习子龙山人的21天emacs教学
+http://book.emacs-china.org/
